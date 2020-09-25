@@ -1,4 +1,6 @@
-const add = (x, y) => { return x + y }
+const add = (x, y) => { 
+  return x + y 
+}
 
 const validate = async (event) => {
   console.log(`triggered validate on ${event.target.id}`)
@@ -35,9 +37,13 @@ document.addEventListener('focusout', event => {
 })
 
 document.addEventListener('click', event => {
-  if (event.target && event.target.id === 'addButton') { updateWithAdd(event) }
+  if (event.target && event.target.id === 'addButton') { 
+    updateWithAdd(event) 
+  }
 })
 
 document.addEventListener('click', event => {
-  if (event.target && event.target.id === 'getJokeButton') { updateWithJoke(event) }
+  if (event.target && event.target.id === 'getJokeButton') { 
+    updateWithJoke(event) 
+  }
 })
